@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6a994e;
+    font-family: 'Gruppo', cursive;
+    font-size: 45px;
+    display: flex;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #f2e8cf
+}
+
+
+
+.kinetic {
+    position: relative;
+    height: 55px;
+    width: 55px;
+    margin-left: 45px;
+}
+
+.kinetic::before, .kinetic::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: #f2e8cf; 
+    animation: rotateA 2s linear infinite 0.5s;
+
+}
+
+.kinetic::before {
+    transform: rotate(90deg);
+    animation: rotateB 2s linear infinite;
+}
+
+@keyframes rotateA {
+    0%, 25% {
+        transform: rotate(0deg);
+    }
+    50%, 75% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateB {
+    0%, 25% {
+        transform: rotate(90deg);
+    }
+    50%, 75% {
+        transform: rotate(240deg);
+    }
+    100% {
+        transform: rotate(440deg);
+    }
+}
+
