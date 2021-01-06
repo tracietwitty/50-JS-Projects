@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Syne', sans-serif;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #304C89;
+}
+
+.button {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #Ebd8d0;
+    border: none;
+    font-family: inherit;
+    font-size: 2rem;
+    color: #075488;
+    box-shadow: 0 10px 18px rgba(56, 60, 67, 0.8);
+    font-weight: 600;
+    cursor: pointer;
+    outline: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(.96);
+}
+
+#toasts {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.toast {
+    background-color: #Ebd8d0;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.toast.info {
+    color: #075488;
+}
+
+.toast.success {
+    color: #3e8914;
+}
+
+.toast.error {
+    color: #ec0b43;
+}
