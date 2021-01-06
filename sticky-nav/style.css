@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color:#d7f1f7;
+    padding-bottom: 50px;
+    background-color: #d7f1f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    position: fixed;
+    background-color: #d7f1f7;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: #636564;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+    background-color: rgba(216,241,247, 0.8);
+}
+
+.nav a.current, .nav a:hover {
+    color: #dc271a;
+    font-weight: bold;
+}
+
+.nav .logo a {
+    font-family: 'Antic Didone', serif;
+    font-size: 30px;
+    color: #dc271a;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+.hero h1 {
+    font-family: 'Antic Didone', serif;
+    font-size: 80px;
+    font-weight: lighter;
+    letter-spacing: .2rem;
+    margin: -100px 0 20px;
+
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: .1rem;;
+}
+
+.container.content h2, .container.content h3 {
+
+    font-family: 'Antic Didone', serif;
+    font-size: 3rem;
+    margin: 40px 20px 0 0;
+    letter-spacing: .2rem;
+    color: #dc271a;
+}
+
+.container.content p {
+    color: #636564;
+    line-height: 28px;
+    letter-spacing: 1.1px;
+    margin-top: 10px;
+}
+
