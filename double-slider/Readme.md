@@ -1,4 +1,4 @@
-# :arrow_heading_up:  Vertical Slider  :arrow_heading_down:
+# :arrow_heading_down:  Vertical Slider  :arrow_heading_up:
  
 
 
