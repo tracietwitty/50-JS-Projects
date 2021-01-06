@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Redressed&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.left-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 4rem;
+}
+
+.left-slide h1 {
+    font-family: 'Redressed', cursive;
+    font-size: 4.3rem;
+    margin-bottom: 20px;
+    margin-top: -80px;
+    text-align: center;
+    text-shadow: 2px 5px rgba(0,0,0,0.2);
+
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.8rem;
+    margin: 20px 40px;
+    text-align: center;
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    background-color: #eeeeee;
+    border: none;
+    color: #aaaaaa;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 23px;
+    outline: hidden;
+}
+
+button:hover {
+    color: #888888;
+}
+
+button:focus {
+    outline: none;
+}
+
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+    transform: translate(-100%, 75px);
+    border-bottom-left-radius: 10px;
+}
+
+.slider-container .action-buttons .up-button {
+    border-top-right-radius: 10px;
+
+}
