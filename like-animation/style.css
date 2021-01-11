@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Share:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share', cursive;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    background-color: #0c1821;
+    color: #ccc9dc;
+    letter-spacing: .2rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+small {
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.fa-heart {
+    color: rgb(255, 71, 218);
+}
+
+.loveMe {
+    height: 440px;
+    width: 300px;
+    background: url('https://picsum.photos/400') no-repeat center center/cover;
+    margin: auto;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    box-shadow: 10px 8px 200px 10px rgba(255, 71, 218, 0.4);
+    border-radius: 4px;
+}
+
+.loveMe .fa-heart {
+    position: absolute;
+    animation: grow 0.4s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow{
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
+}
